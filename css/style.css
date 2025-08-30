@@ -371,6 +371,36 @@ li {
     right: -7%;
   }
 }
+@media (max-width: 570px) {
+ 
+  .Pricing .box2::after {
+    right: -9%;
+  }
+}
+@media (max-width: 440px) {
+ 
+  .Pricing .box2::after {
+    right: -12%;
+    top: 7%;
+  }
+}
+@media (max-width: 360px) {
+ .Pricing ul + div{
+  margin: 14px !important;
+ }
+  .Pricing .box2::after {
+    right: -17%;
+    top: 5%;
+  }
+}
+@media (max-width: 330px) {
+ 
+  .Pricing .box2::after {
+    font-size: 12px;
+    right: -17%;
+    top: 5%;
+  }
+}
 /* end query Pricing */
 
 /* end pricing */
@@ -494,3 +524,4 @@ footer p {
 /* end query media footer */
 
 /* end footer */
+
