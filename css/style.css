@@ -1,0 +1,496 @@
+:root {
+  --main-color: rgb(230, 126, 34);
+  --text-color: rgb(207, 113, 31);
+  --hover-color: rgb(231, 128, 38);
+  --bg-color: rgb(253, 242, 233);
+  --text-main-color: rgb(85, 85, 85);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  cursor: pointer;
+}
+.row{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* start header */
+.logo {
+  outline: none;
+  width: 120px;
+}
+/* end header */
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-border-color: var(--main-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--hover-color);
+  --bs-btn-hover-border-color: var(--main-color);
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--main-color);
+  --bs-btn-active-border-color: var(--main-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--main-color);
+  --bs-btn-disabled-border-color: var(--main-color);
+}
+.btn-main:hover {
+  box-shadow: 0 0 5px 4px rgba(230, 125, 34, 0.5);
+}
+.bg-main {
+  background-color: var(--bg-color);
+}
+.text-color {
+  color: var(--text-color);
+}
+.text-main-color {
+  color: var(--text-main-color);
+}
+
+/* start home */
+.navbar.shadow{ 
+  background-color: #fff;
+  z-index: 111 !important;
+} 
+
+.home h1 {
+  font-size: 54px;
+}
+.home p {
+  width: 80%;
+}
+.reviews img {
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  background-color: var(--bg-color);
+  margin-right: -20px;
+}
+
+.text-reviews {
+  transform: translateY(25%);
+}
+
+.btn-outline-special {
+  background-color: #fff;
+  color: var(--text-main-color);
+  border: 3px solid transparent;
+}
+.btn-outline-special:hover {
+  color: var(--text-main-color);
+  border-color: #fff;
+}
+.wrapper-images {
+  height: 65vh;
+}
+.wrapper-images img {
+  height: 100%;
+}
+
+/* start media query home */
+@media (max-width: 1200px) {
+  .home {
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
+@media (max-width: 995px) {
+  .home {
+    height: fit-content !important;
+    .wapper-text {
+      text-align: center !important;
+    }
+    p,
+    .group-btns {
+      margin: 20px auto !important;
+    }
+    h1 {
+      padding-top: 78px;
+      font-size: 38px;
+    }
+    .col-md-6 {
+      width: 100% !important;
+    }
+    .wrapper-images {
+      height: 340px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  }
+}
+@media (max-width: 775px) {
+  .home {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 14px !important;
+    }
+  }
+}
+@media (max-width: 465px) {
+  .home {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .home {
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 10px;
+    }
+    .group-btns {
+      margin: 5px 0 !important;
+    }
+    button {
+      font-size: 12px !important;
+      margin: 5px 0;
+    }
+
+    .reviews img {
+      width: 35px;
+      height: 35px;
+      padding: 2px;
+      margin-right: -12px;
+    }
+  }
+}
+@media (max-width: 330px) {
+  .home {
+    .wrapper-images {
+      height: 240px;
+    }
+  }
+}
+/* end media query home */
+
+/* end home */
+
+/* start brands */
+.brands img {
+  height: 2.2rem;
+  filter: brightness(0);
+  opacity: 0.5;
+  width: 70%;
+}
+
+/* start media query brands */
+@media (max-width: 1000px) {
+  .brands {
+    img {
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .brands {
+    img {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .brands {
+    .col {
+      padding: 0 5px !important ;
+    }
+    img {
+      width: 100%;
+      object-fit: scale-down;
+    }
+  }
+}
+/* end media query brands */
+
+/* end brands */
+
+/* start How it works */
+.how_to_work h3 {
+  font-size: 70px;
+}
+.how_to_work img {
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.how_to_work .coverPart1::before {
+  content: "";
+  height: 240px;
+  width: 240px;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 0 30px rgba(253, 242, 233, 0.3);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* start query how to work */
+@media (max-width: 770px) {
+  .how_to_work .coverPart1 img {
+    height: 250px;
+  }
+  .how_to_work .coverPart1::before {
+    height: 140px;
+    width: 140px;
+  }
+}
+@media (max-width: 480px) {
+  .how_to_work .col-6 {
+    width: 100% !important;
+  }
+  .how_to_work .coverPart1 {
+    height: 270px;
+  }
+  .how_to_work .coverPart1::before {
+    height: 180px;
+    width: 180px;
+  }
+  .orderDisplay_1 {
+    order: 1 !important;
+  }
+  .orderDisplay_2 {
+    order: 2 !important;
+  }
+}
+/* end query how to work */
+
+/* end How it works */
+
+/* start meals */
+.meals .box {
+  transition: all 0.5s ease;
+  span {
+    font-size: 12px;
+  }
+}
+.meals .box:hover {
+  transform: translateY(-20px);
+}
+.see_recipes:hover {
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+  border-bottom: 1px solid var(--text-color);
+}
+
+/* start query meals */
+@media (max-width: 770px) {
+  .meals .row .col-4 {
+    width: 50% !important;
+  }
+}
+@media (max-width: 440px) {
+  .meals .row .col-4 {
+    width: 100% !important;
+  }
+}
+/* end query meals */
+
+/* end meals */
+
+/* start testimonials */
+.testimonials .wrapper-text img {
+  width: 60px;
+  height: 60px;
+}
+.testimonials .image img {
+  transition: all 0.5s ease;
+}
+.testimonials .image img:hover {
+  transform: scale(1.2);
+}
+
+/* start query testimonials */
+@media (max-width: 450px) {
+  .testimonials row {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .testimonials .wrapper-text {
+    .col-6 {
+      width: 100% !important;
+    }
+  }
+}
+/* end query testimonials */
+
+/* end testimonials */
+
+/* start pricing */
+.Pricing .money {
+  font-size: 70px;
+}
+.Pricing .box1 {
+  border: 2px solid var(--bg-color);
+}
+.Pricing .box2::after {
+  content: "BEST VALUE";
+  position: absolute;
+  top: 7%;
+  right: -10%;
+  width: 100;
+  padding: 2px 45px;
+  font-size: 15px;
+  background-color: rgb(255, 225, 0);
+  font-weight: bold;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+/* start query Pricing */
+@media (max-width: 1200px) {
+  .Pricing .box2::after {
+    top: 5%;
+    right: -14%;
+  }
+}
+@media (max-width: 770px) {
+  .Pricing .col-sm-6 {
+    margin: 10px 0;
+    width: 100% !important;
+  }
+  .Pricing .box2::after {
+    top: 6%;
+    right: -7%;
+  }
+}
+/* end query Pricing */
+
+/* end pricing */
+
+/* start feature */
+.feature i {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* start query feature */
+@media (max-width: 490px) {
+  .feature .col-6 {
+    width: 100%;
+  }
+}
+/* end query feature */
+
+/* end feature */
+
+/* start booking order */
+.booking .wrapper-form {
+  background-color: var(--main-color);
+  color: #45260a;
+}
+.booking .wrapper-form input,
+select {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  outline: none;
+}
+.booking .wrapper-form input::placeholder {
+  color: #45260aaf;
+  font-weight: 700;
+
+  padding-left: 8px;
+}
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-form:hover {
+  background-color: #fff;
+  color: var(--text-main-color);
+}
+
+/* start query booking */
+@media (max-width: 600px) {
+  .booking .wrapper-form {
+    padding: 20px !important;
+  }
+  .booking p {
+    font-size: 15px !important;
+  }
+  .booking .col-6 {
+    width: 100%;
+  }
+  .booking button {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 600px) {
+  .booking p {
+    font-size: 13px !important;
+  }
+}
+
+/* end query booking */
+
+/* end booking order */
+
+/* start footer */
+footer {
+  margin-top: 8%;
+  padding: 6% 0;
+  border-top: 1px solid rgb(208, 208, 208);
+}
+footer img {
+  width: 120px;
+}
+footer .icons {
+  width: 110px;
+}
+footer p {
+  width: 180px;
+}
+
+/* start query media footer */
+@media (max-width: 990px) {
+  footer .col {
+    width: fit-content !important;
+    flex: none;
+  }
+}
+@media (max-width: 500px) {
+  footer .icons {
+    width: 200px !important;
+    margin: 0 auto;
+  }
+  footer p,
+  footer .icons {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer .col{
+    width: 100% !important;
+    text-align: center;
+  }
+}
+/* end query media footer */
+
+/* end footer */
